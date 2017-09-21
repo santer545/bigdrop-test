@@ -1,17 +1,17 @@
 .navbar {
     float: right;
-    padding: 34px 0;
     ul {
         padding: 0;
         margin: 0 43px 0 0;
         list-style-type: none;
         display: inline-block;
         vertical-align: middle;
-        border-right: 1px solid #e8e8e8;
+
 
         li {
+            position: relative;
             float: left;
-            
+            padding: 34px 0;
 
             a {
                 display: inline-block;
@@ -23,17 +23,29 @@
                 color: #565656;
                 transition: color 0.3s;
             }
+            &.active {
+                >span {
+                    display: inline-block;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #565656;
+                    transition: color 0.3s;
+                }
+            }
 
             &:hover {
-            	a {
-            		color: #ffdb2b;
-            	}
+                >a {
+                    color: #ffdb2b;
+                }
             }
 
             .caret {
                 display: inline-block;
                 vertical-align: middle;
-                margin-left: 10px;	
+                margin-left: 10px;
                 width: 0;
                 height: 0;
                 border-style: solid;
@@ -42,11 +54,16 @@
             }
             .dropdown {
                 display: none;
+                position: absolute;
+                top: 100%;
+                z-index: 2;
                 margin: 0;
                 padding: 0;
                 list-style: none;
                 border: none;
                 li {
+                    padding: 0;
+                    background-color: #fff;
                     float: none;
                     margin: 0;
                     transition: background-color 0.3s;
@@ -54,8 +71,22 @@
                         background-color: #fafbfc;
                     }
                     a {
+                        display: block;
                         padding: 15px 24px;
+                        text-transform: uppercase;
                     }
+                    &.active {
+                        background-color: #fafbfc;
+                        >a,
+                        >span {
+                            color: #ffdb2b;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .dropdown {
+                    display: block;
                 }
             }
         }

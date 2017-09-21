@@ -1,12 +1,13 @@
 /* header */
 
 .header {
+    padding: 0 55px;
     @include clearfix;
 
     .logo {
         display: block;
         float: left;
-        padding: 34px 0;
+        padding: 30px 0 0;
     }
 
     .search {
@@ -81,6 +82,7 @@
     margin-bottom: 20px;
     border-spacing: 0;
     border: 1px solid #f0f0f0;
+    border-bottom: none;
     td {
         font-size: 14px;
         font-weight: 500;
@@ -117,6 +119,7 @@
 
 .post {
     text-align: justify;
+
     &:after {
         content: '';
         display: inline-block;
@@ -124,17 +127,18 @@
         width: 100%;
     }
     &-wrapper {
-        padding: 70px 0;
         border-top: 1px solid #f1f1f5;
-        border-bottom: 1px solid #f1f1f5;
+        margin: 0 -9999px;
+        padding: 70px 9999px;
     }
     &-item {
-        display: inline-block;
-        vertical-align: top;
-        width: 370px;
         font-size: 16px;
         font-weight: 400;
         text-align: left;
+        margin-bottom: 30px;
+        @include desktop {
+            margin-bottom: 0;
+        }
         >div {
             width: 50%;
             display: table-cell;
@@ -187,6 +191,8 @@
 }
 
 .footer {
+    padding: 0 55px;
+    border-top: 1px solid #f1f1f5;
     &-top {
         @include clearfix;
     }
@@ -235,6 +241,8 @@
         }
     }
 }
+
+
 
 .copyright {
     padding-bottom: 30px;

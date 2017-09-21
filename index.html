@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>BigDrop test</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -53,33 +54,31 @@
     </svg>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
-                <a href="#" class="logo">
-            		<img src="images/logo.svg" alt="" width="83" height="32">
-            	</a>
-                <nav class="navbar">
-                    <ul>
-                        <li>
-                            <a href="">about
-                        	<div class="caret"></div></a>
-                            <ul class="dropdown">
-                                <li>services</li>
-                                <li>companies</li>
-                                <li>our team</li>
-                            </ul>
-                        </li>
-                        <li><a href="">guides</a></li>
-                        <li><a href="">community</a></li>
-                        <li><a href="">resources</a></li>
-                        <li><a href="">contact us</a></li>
-                    </ul>
-                    <div class="search">
-                        <svg class="icon icon-search">
-                            <use xlink:href="#icon-search"></use>
-                        </svg>
-                    </div>
-                </nav>
-            </div>
+            <a href="#" class="logo">
+                    <img src="images/logo.svg" alt="" width="83" height="32">
+                </a>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="">about
+                            <div class="caret"></div></a>
+                        <ul class="dropdown">
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">companies</a></li>
+                            <li><a href="#">our team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">guides</a></li>
+                    <li><a href="">community</a></li>
+                    <li><a href="">resources</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+                <div class="search">
+                    <svg class="icon icon-search">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                </div>
+            </nav>
         </header>
         <main>
             <div class="slider">
@@ -117,6 +116,9 @@
                         <p>The Kuril Islands form part of the ring of tectonic instability encircling the Pacific Ocean referred to as the Ring of Fire. The islands themselves are summits of stratovolcanoes that are a direct result of the subduction of the Pacific Plate under the Okhotsk Plate, which forms the Kuril Trench some 200 kilometres (120 mi) east of the islands. The chain has around 100 volcanoes, some 40 of which are active, and many hot springs and fumaroles. </p>
                         <blockquote>
                             Those inhabitants however, though they’ve quite a bit to be disgruntled about, are exceptionally good-natured. Perhaps it comes from having to get along and help one another in this harsh environment.
+                            <div>
+                                <span>Danila Antsiferov</span>
+                            </div>
                         </blockquote>
                         <h3>List of main islands</h3>
                         <p>While in Russian sources the islands are mentioned for the first time in 1646, the earliest detailed information about them was provided by the explorer Vladimir Atlasov in 1697. </p>
@@ -143,9 +145,9 @@
                                 <tr>
                                     <td>Makanrushi</td>
                                     <td>Zakat</td>
+                                    <td></td>
                                     <td>50.0</td>
                                     <td>0</td>
-                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>Onekotan</td>
@@ -178,87 +180,118 @@
             </div>
             <div class="container">
                 <div class="post-wrapper">
-                	<h2 class="text-center">Latest Posts</h2>
-                	<div class="post">
-                	    <div class="post-item">
-                	        <div class="post-bg" style="background-image: url('images/post-1.jpg')"></div>
-                	        <div>
-                	            <h3>travel</h3>
-                	            <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
-                	            <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-                	        </div>
-                	    </div>
-                	    <div class="post-item">
-                	        <div class="post-bg" style="background-image: url('images/post-2.jpg')"></div>
-                	        <div>
-                	            <h3>travel</h3>
-                	            <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
-                	            <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-                	        </div>
-                	    </div>
-                	    <div class="post-item">
-                	        <div class="post-bg" style="background-image: url('images/post-3.jpg')"></div>
-                	        <div>
-                	            <h3>travel</h3>
-                	            <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
-                	            <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-                	        </div>
-                	    </div>
-                	</div>
+                    <h2 class="text-center">Latest Posts</h2>
+                    <div class="post row">
+                        <div class="col-4">
+                            <div class="post-item">
+                                <div class="post-bg" style="background-image: url('images/post-1.jpg')"></div>
+                                <div>
+                                    <h3>travel</h3>
+                                    <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
+                                    <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="post-item">
+                                <div class="post-bg" style="background-image: url('images/post-2.jpg')"></div>
+                                <div>
+                                    <h3>travel</h3>
+                                    <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
+                                    <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="post-item">
+                                <div class="post-bg" style="background-image: url('images/post-3.jpg')"></div>
+                                <div>
+                                    <h3>travel</h3>
+                                    <p>Planning the South African Wine Vacation of Your Dreams Got Easier</p>
+                                    <a href="#"><span>READ MORE</span> <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="container">
-            	<div class="footer-top">
-            	    <nav>
-            	        <ul class="footer-nav">
-            	            <li>
-            	                <a href="">about</a>
-            	            </li>
-            	            <li><a href="">guides</a></li>
-            	            <li><a href="">community</a></li>
-            	            <li><a href="">resources</a></li>
-            	            <li><a href="">contact us</a></li>
-            	        </ul>
-            	        <ul class="social">
-            	            <li>
-            	                <a href="#">
-            	                    <svg class="icon icon-facebook">
-            	                        <use xlink:href="#icon-facebook"></use>
-            	                    </svg>
-            	                </a>
-            	            </li>
-            	            <li>
-            	                <a href="#">
-            	                    <svg class="icon icon-houzz">
-            	                        <use xlink:href="#icon-houzz"></use>
-            	                    </svg>
-            	                </a>
-            	            </li>
-            	            <li>
-            	                <a href="#">
-            	                    <svg class="icon icon-twitter">
-            	                        <use xlink:href="#icon-twitter"></use>
-            	                    </svg>
-            	                </a>
-            	            </li>
-            	            <li>
-            	                <a href="#">
-            	                    <svg class="icon icon-instagram">
-            	                        <use xlink:href="#icon-instagram"></use>
-            	                    </svg>
-            	                </a>
-            	            </li>
-            	        </ul>
-            	    </nav>
-            	</div>
-            	<div class="copyright">
-            		Copyright © 2017 TestPage. All rights reserved. 
-            	</div>
+            <div class="footer-top">
+                <nav>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">about</a>
+                        </li>
+                        <li><a href="">guides</a></li>
+                        <li><a href="">community</a></li>
+                        <li><a href="">resources</a></li>
+                        <li><a href="">contact us</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <svg class="icon icon-facebook">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon icon-houzz">
+                                    <use xlink:href="#icon-houzz"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon icon-twitter">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">
+                Copyright © 2017 TestPage. All rights reserved.
             </div>
         </footer>
     </div>
+    </div>
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal-left" style="background-image: url('images/contact-form.jpg')">
+                
+            </div>
+            <div class="contact-form">
+                <h3>Contact us</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="message" id="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit">send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="js/all.min.js"></script>
 </body>

@@ -21,3 +21,46 @@ h2 {
 .text-right {
 	text-align: right;
 }
+
+blockquote {
+	position: relative;
+	margin: 0;
+	padding: 50px 0 45px 70px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+	font-style: italic;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	&:before {
+		content: '“';
+		position: absolute;
+		top: 50px;
+		left: 0;
+		font-size: 80px;
+		line-height: 80px;
+		font-style: normal;
+		color: #ffd942;
+	}
+	> div {
+		text-align: right;
+	}
+	span {
+		position: relative;
+		font-family: 'Work Sans', 'Arial', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		line-height: 14px;
+		color: #797979;
+		padding-left: 22px;
+		text-align: right;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 9px;
+			right: 100%;
+			width: 40px;
+			height: 1px;
+			background-color: #797979;
+		}
+	}
+}

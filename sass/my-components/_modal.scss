@@ -1,0 +1,39 @@
+.modal {
+	display: none;
+	width: 100%;
+	max-width: 770px;
+	margin: 145px auto 0;
+	display: table;
+	&-left {
+		width: 45%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&-left,
+	.contact-form {
+		display: table-cell;
+	}
+	.contact-form {
+		padding: 70px;
+		width: 55%;
+		background-color: #fff;
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: 500;
+		color: #0f0f0f;
+		margin-top: 0;
+	}
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 999;
+}

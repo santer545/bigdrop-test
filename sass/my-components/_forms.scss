@@ -1,0 +1,64 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	font-size: 12px;
+	height: 17px;
+	padding-bottom: 8px;
+	border: none;
+	border-bottom: 1px solid #aeaeae;
+	width: 100%;
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+	height: 60px;
+	border: none;
+	border-bottom: 1px solid #aeaeae;
+	resize: none;
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  font-weight: 500;
+	  color: #9e9e9e;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-group {
+	margin-bottom: 35px;
+}
