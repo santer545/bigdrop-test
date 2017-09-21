@@ -1,0 +1,25 @@
+body,
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Work Sans', 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #333;
+	background-color: #fff;
+}
+
+.wrapper {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
