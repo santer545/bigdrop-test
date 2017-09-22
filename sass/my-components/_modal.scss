@@ -1,39 +1,78 @@
 .modal {
-	display: none;
-	width: 100%;
-	max-width: 770px;
-	margin: 145px auto 0;
-	display: table;
-	&-left {
-		width: 45%;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-	&-left,
-	.contact-form {
-		display: table-cell;
-	}
-	.contact-form {
-		padding: 70px;
-		width: 55%;
-		background-color: #fff;
-	}
-	h3 {
-		font-size: 24px;
-		font-weight: 500;
-		color: #0f0f0f;
-		margin-top: 0;
-	}
+    position: absolute;
+    top: 100px;	
+    left: 50%;	
+    transform: translate(-50%, 0);
+    display: none;
+    width: 100%;
+    max-width: 770px;
+    -webkit-box-shadow: -1px 1px 14px 2px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: -1px 1px 14px 2px rgba(0, 0, 0, 0.11);
+    box-shadow: -1px 1px 14px 2px rgba(0, 0, 0, 0.11);
+    z-index: 999;
+
+    &-wrapper {
+    	display: table;
+    	width: 100%;	
+    }
+    &-left {
+        width: 45%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-left,
+    .contact-form {
+        display: table-cell;
+    }
+    .contact-form {
+        padding: 70px;
+        width: 55%;
+        background-color: #fff;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #0f0f0f;
+        margin-top: 0;
+    }
 }
 
 .overlay {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 100vh;
-	background-color: rgba(255, 255, 255, 0.8);
-	z-index: 999;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 998;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    &:after,
+    &:before {
+        content: "";
+        width: 20px;
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: -2px;
+        height: 1px;
+        background-color: #333;
+        transform: rotate(-45deg);
+    }
+    &:after {
+        transform: rotate(45deg);
+    }
+}
+
+[data-modal] {
+	cursor: pointer;
 }

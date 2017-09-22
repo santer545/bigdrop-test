@@ -60,6 +60,7 @@ gulp.task('scripts', function() {
             sourceDir + '/jquery-2.2.1.min.js',
             sourceDir + '/svguse.js',
             sourceDir + '/swiper.jquery.js',
+            sourceDir + '/validate.js',
             sourceDir + '/main.js'
         ])
 

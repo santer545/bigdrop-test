@@ -71,7 +71,7 @@
                     <li><a href="">guides</a></li>
                     <li><a href="">community</a></li>
                     <li><a href="">resources</a></li>
-                    <li><a href="">contact us</a></li>
+                    <li><a data-modal="contact-us">contact us</a></li>
                 </ul>
                 <div class="search">
                     <svg class="icon icon-search">
@@ -226,7 +226,7 @@
                         <li><a href="">guides</a></li>
                         <li><a href="">community</a></li>
                         <li><a href="">resources</a></li>
-                        <li><a href="">contact us</a></li>
+                        <li><a role="button" data-modal="#contact-us">contact us</a></li>
                     </ul>
                     <ul class="social">
                         <li>
@@ -266,22 +266,24 @@
         </footer>
     </div>
     </div>
-    <div class="overlay">
-        <div class="modal">
+    <div class="overlay"></div>
+    <div class="modal" id="contact-us">
+        <div class="close">
+        </div>
+        <div class="modal-wrapper">
             <div class="modal-left" style="background-image: url('images/contact-form.jpg')">
-                
             </div>
             <div class="contact-form">
                 <h3>Contact us</h3>
-                <form action="">
+                <form action="" class="js_validate">
                     <div class="form-group">
-                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="name" id="name" required data-validate="name">
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Phone">
+                        <input type="tel" placeholder="Phone" id="phone" name="phone" required data-validate="phone">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="email" id="email" name="email" required data-validate="email">
                     </div>
                     <div class="form-group">
                         <textarea name="message" placeholder="message" id="message"></textarea>
@@ -293,6 +295,10 @@
             </div>
         </div>
     </div>
+    
+    
+
+
     <script src="js/all.min.js"></script>
 </body>
 
