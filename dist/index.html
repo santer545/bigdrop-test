@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BigDrop test</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
@@ -50,6 +51,12 @@
                 <title>home2</title>
                 <path d="M16 1l-16 16 3 3 3-3v13h8v-6h4v6h8v-13l3 3 3-3-16-16zM16 14c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2z"></path>
             </symbol>
+            <symbol id="icon-hamburger-menu" viewBox="0 0 32 32">
+                <title>hamburger-menu</title>
+                <path d="M30.707 14.707h-29.415c-0.714 0-1.293 0.579-1.293 1.293s0.579 1.293 1.293 1.293h29.415c0.714 0 1.293-0.579 1.293-1.293s-0.579-1.293-1.293-1.293z"></path>
+                <path d="M30.707 4.902h-29.415c-0.714 0-1.293 0.579-1.293 1.293s0.579 1.293 1.293 1.293h29.415c0.714 0 1.293-0.579 1.293-1.293s-0.579-1.293-1.293-1.293z"></path>
+                <path d="M30.707 24.512h-29.415c-0.714 0-1.293 0.579-1.293 1.293s0.579 1.293 1.293 1.293h29.415c0.714 0 1.293-0.579 1.293-1.293s-0.579-1.293-1.293-1.293z"></path>
+            </symbol>
         </defs>
     </svg>
     <div class="wrapper">
@@ -72,7 +79,14 @@
                     <li><a href="">community</a></li>
                     <li><a href="">resources</a></li>
                     <li><a data-modal="contact-us">contact us</a></li>
+                    <div class="navbar-close js-navbar-close">
+                    </div>
                 </ul>
+                <div class="hamburger-button js-toggle">
+                    <svg class="icon icon-hamburger-menu">
+                        <use xlink:href="#icon-hamburger-menu"></use>
+                    </svg>
+                </div>
                 <div class="search">
                     <svg class="icon icon-search">
                         <use xlink:href="#icon-search"></use>
@@ -295,10 +309,6 @@
             </div>
         </div>
     </div>
-    
-    
-
-
     <script src="js/all.min.js"></script>
 </body>
 

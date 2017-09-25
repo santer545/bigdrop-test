@@ -1,18 +1,40 @@
 .navbar {
     float: right;
+    @include tablet {
+        padding-top: 20px;
+    }
     ul {
         padding: 0;
         margin: 0 43px 0 0;
         list-style-type: none;
         display: inline-block;
         vertical-align: middle;
-
+        @include tablet {
+            position: fixed;
+            width: 300px;
+            right: 0;
+            margin: 0;
+            top: 0;
+            background-color: #fff;
+            z-index: 20;
+            transform: translate3d(300px, 0, 0);
+            transition: transform 0.3s;
+            padding-top: 40px;
+        }
+        &.active {
+            @include tablet {
+                transform: translate3d(0, 0, 0);
+            }
+        }
 
         li {
             position: relative;
             float: left;
             padding: 34px 0;
-
+            @include tablet {
+                float: none;
+                padding: 0;
+            }
             a {
                 display: inline-block;
                 padding: 0 20px;
@@ -22,6 +44,14 @@
                 text-decoration: none;
                 color: #565656;
                 transition: color 0.3s;
+                @include desktop {
+                    padding: 0 10px;
+                }
+                @include tablet {
+                    padding: 20px;
+                    display: block;
+                }
+                
             }
             &.active {
                 >span {
@@ -99,5 +129,38 @@
             height: 21px;
             vertical-align: middle;
         }
+    }
+}
+
+.hamburger-button {
+    vertical-align: middle;
+    margin-right: 30px;
+    display: none;
+    @include tablet {
+        display: inline-block;
+    }
+}
+
+.navbar-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    &:after,
+    &:before {
+        content: "";
+        width: 20px;
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: -2px;
+        height: 1px;
+        background-color: #333;
+        transform: rotate(-45deg);
+    }
+    &:after {
+        transform: rotate(45deg);
     }
 }

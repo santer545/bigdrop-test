@@ -3,6 +3,7 @@
      slider();
      lightBox();
      lightBoxClose();
+     toggleMenu ();
 
  });
 
@@ -34,3 +35,12 @@
      });
  }
 
+function toggleMenu () {
+	$('.js-toggle').click(function () {
+		$('.navbar ul').addClass('active');
+	});
+
+	$('.js-navbar-close').click(function () {
+		$(this).closest('ul').removeClass('active');
+	});
+}

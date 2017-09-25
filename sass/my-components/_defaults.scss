@@ -61,11 +61,12 @@ body {
 
 .col-4 {
     width: 100%;
-    @include tablet {
-		width: (100% / 2);
-    }
+    
     @include desktop {
     	width: (100% / 3);
+    }
+    @include tablet {
+		width: (100% / 2);
     }
 }
 
