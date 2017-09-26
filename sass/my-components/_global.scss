@@ -27,6 +27,9 @@
 .slider {
     position: relative;
     margin-bottom: 60px;
+    @include laptop {
+        margin-bottom: 30px;
+    }
     &-text {
         position: absolute;
         top: 50%;
@@ -37,6 +40,14 @@
         font-size: 72px;
         font-weight: 500;
         text-transform: uppercase;
+        @include laptop {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        @include tablet {
+            font-size: 23px;
+            line-height: 30px;
+        }
         span {
             display: block;
             font-size: 16px;
@@ -65,9 +76,15 @@
     p {
         margin-top: 0;
         margin-bottom: 45px;
+        @include desktop {
+            margin-bottom: 30px;
+        }
     }
     &-wrapper {
         padding: 0 27px;
+        @include tablet {
+            padding: 0 15px;
+        }
     }
 }
 
@@ -75,6 +92,9 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 64px;
+    @include desktop {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -124,7 +144,7 @@
 
 .post {
     text-align: justify;
-
+    
     &:after {
         content: '';
         display: inline-block;
@@ -135,6 +155,9 @@
         border-top: 1px solid #f1f1f5;
         margin: 0 -9999px;
         padding: 70px 9999px;
+        @include desktop {
+            padding: 30px 9999px;
+        }
     }
     &-item {
         font-size: 16px;
@@ -143,13 +166,21 @@
         @include desktop {
             margin-bottom: 30px;
         }
-        >div {
+        > div {
             width: 50%;
             display: table-cell;
             padding: 30px 20px 20px;
             -webkit-box-shadow: 2px 4px 38px -12px rgba(0, 0, 0, 0.75);
 	        -moz-box-shadow: 2px 4px 38px -12px rgba(0, 0, 0, 0.75);
 	        box-shadow: 2px 4px 38px -12px rgba(0, 0, 0, 0.75);
+            @include desktop {
+                width: 100%;
+                display: block;
+                height: 200px;
+            }
+            & + div {
+                height: auto;
+            }
         }
         h3,
         a {
@@ -197,6 +228,9 @@
 .footer {
     padding: 0 55px;
     border-top: 1px solid #f1f1f5;
+    @include tablet {
+        padding: 0 15px;
+    }
     &-top {
         @include clearfix;
     }
@@ -205,9 +239,24 @@
         list-style-type: none;
         padding: 64px 0 0;
         margin: 0;
+        @include desktop {
+            padding-top: 30px;
+            float: none;
+            text-align: center;
+        }
         li {
-            float: left;
+            display: inline-block;
+            vertical-align: middle;
             margin-right: 60px;
+
+            @include desktop {
+                margin-right: 20px;
+            }
+            @include tablet {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
             a {
                 font-weight: 400;
                 font-size: 14px;
@@ -230,9 +279,17 @@
     list-style-type: none;
     padding: 43px 0 36px;
     margin: 0;
+    @include desktop {
+        float: none;
+        text-align: center;
+        padding: 20px 0;
+    }
     li {
-        float: left;
-        margin-left: 20px;
+        display: inline-block;
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
         svg {
             width: 42px;
             height: 42px;
@@ -254,4 +311,7 @@
     font-weight: 400;
     color: #b5b5b5;
     text-align: right;
+    @include desktop {
+        text-align: center;
+    }
 }

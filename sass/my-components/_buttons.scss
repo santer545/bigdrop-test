@@ -22,4 +22,13 @@
 		color: #333333;
 		background-color: #ffd942;
 	}
+    &-search {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 22px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+    }
 }

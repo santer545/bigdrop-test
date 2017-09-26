@@ -31,6 +31,10 @@ blockquote {
 	font-style: italic;
 	border-top: 1px solid #dddddd;
 	border-bottom: 1px solid #dddddd;
+	@include tablet {
+    	padding: 20px 0 20px 50px;
+    	font-size: 14px;
+	}
 	&:before {
 		content: '“';
 		position: absolute;
@@ -40,9 +44,15 @@ blockquote {
 		line-height: 80px;
 		font-style: normal;
 		color: #ffd942;
+		@include tablet {
+			line-height: 25px;
+		}
 	}
 	> div {
 		text-align: right;
+		@include tablet {
+			margin-top: 10px;
+		}
 	}
 	span {
 		position: relative;
