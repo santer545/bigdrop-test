@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    top: 100px;
+    top: 145px;
     left: 50%;
     transform: translate(-50%, 0);
     display: none;
@@ -24,13 +24,13 @@
         display: table-cell;
     }
     .contact-form {
-        padding: 70px;
-        width: 55%;
+        padding: 61px 72px 43px;
+        width: 52.5%;
         background-color: #fff;
     }
 
     &-left {
-        width: 45%;
+        width: 47.5%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -44,6 +44,7 @@
         font-weight: 500;
         color: #0f0f0f;
         margin-top: 0;
+        margin-bottom: 46px;
     }
 }
 

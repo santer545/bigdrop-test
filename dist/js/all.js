@@ -4770,7 +4770,7 @@ function validate(form){
 
  $(document).ready(function() {
 
- 	// initial slider
+     // initial slider
      slider();
 
      // contact form lightbox
@@ -4792,7 +4792,11 @@ function validate(form){
  function slider() {
      //initialize swiper when document ready  
      var mySwiper = new Swiper('.swiper-container', {
-
+         autoplay: 7000,
+         effect: 'fade',
+         fade: {
+             crossFade: true
+         }
      });
  }
 
