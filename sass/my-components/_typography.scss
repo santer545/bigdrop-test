@@ -12,6 +12,13 @@ h2 {
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #0f0f0f;
+	margin: 20px 0 42px;	
+}
+
+h3 {
+	font-size: 20px;	
+	font-weight: 500;	
+	margin: 20px 0 10px;	
 }
 
 .text-center {
@@ -24,13 +31,14 @@ h2 {
 
 blockquote {
 	position: relative;
-	margin: 0;
-	padding: 50px 0 45px 70px;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 16px;
-	font-style: italic;
-	border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
+    margin: 0 0 45px;
+    padding: 43px 0 37px 70px;
+    font-family: Libre Baskerville,serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 	@include tablet {
     	padding: 20px 0 20px 50px;
     	font-size: 14px;
@@ -39,9 +47,9 @@ blockquote {
 		content: '“';
 		position: absolute;
 		top: 50px;
-		left: 0;
+		left: -5px;
 		font-size: 80px;
-		line-height: 80px;
+		line-height: 69px;
 		font-style: normal;
 		color: #ffd942;
 		@include tablet {
@@ -50,6 +58,7 @@ blockquote {
 	}
 	> div {
 		text-align: right;
+		margin-top: 7px;		
 		@include tablet {
 			margin-top: 10px;
 		}

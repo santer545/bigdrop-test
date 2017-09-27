@@ -24,11 +24,19 @@
 	}
     &-search {
         position: absolute;
-        top: 10px;
+        top: 14px;
         left: 0;
-        width: 22px;
-        height: 24px;
+        width: 24px;
+        height: 21px;
+        padding: 0; 
         background-color: transparent;
         border: none;
+        @include desktop {
+            top: 6px;      
+        }
+        svg {
+            width: 24px;    
+            height: 21px;   
+        }
     }
 }
