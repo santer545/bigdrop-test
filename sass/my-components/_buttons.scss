@@ -17,10 +17,16 @@
     border-radius: 25px;
     text-transform: uppercase;
     min-width: 140px;
-    
+    &:focus {
+        outline: none;
+    }
 	&-success {
 		color: #333333;
 		background-color: #ffd942;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #e8c22a;
+        }
 	}
     &-search {
         position: absolute;
